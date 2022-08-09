@@ -1,32 +1,33 @@
 /*
 Colors used:
-link #357b70
-yellow #F9FA96
+link #0000EE
 input #E6E6E6
 grid #D5F7EB
 button #BCF6F9
+gray #ABB2B9
 
 Fonts used:
 body Roboto
 */
 
 :root {
-  --primary-color: #357b70;
-  --secondary-color: #e0b354;
+  --primary-color: #b1daf6;
+  --secondary-color: #EBF5FB;
   --dark-grey: #2b2b2b;
-  --yellow: #F9FA96;
+  --gray: #ABB2B9; 
   --input: #E6E6E6;
-  --grid-background: #D5F7EB;
-  --link-visted: #8E44AD;
-  --link-active: #489c79;
-  --button-background: #BCF6F9;
+  --section-background: #d7dadb;
+  --link: #0000EE;
+  --link-visted: #551A8B;
+  --link-active: #7396e8;
+  --button-background: #5DADE2;
 }
 html {
   height: 100%
 }
 body {
   min-height: 100%;
-  background: radial-gradient(circle, rgba(114,200,236,1) 0%, rgba(111,223,62,0.5494572829131652) 100%);
+  background: var(--secondary-color);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
@@ -34,28 +35,30 @@ body {
   box-sizing: border-box;
 }
 .a {
-  color: var(--primary-color);
+  text-decoration: none;
+  color: var(link);
   transition-duration: 0.9s;
   transition-property: opacity;
-  background-color:
+  background-color: inherit;
 }
 a:hover, a:focus {
   text-decoration: none;
   cursor: pointer;
   opacity: 0.8;
-  font-size: 150%;
 }
 a:visited {
-  color: var(--link-visited);
+  text-decoration: none;
+  color:var(--link-visted);
 }
 a:active {
-  color: var(--link-active);
+  text-decoration: underline;
+  color: var(--link-active)
 }
 .button, button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: var(--button-background);
+  background-color: var(--primary-color);
   color: black;
   text-decoration: none;
   padding: 10px;
@@ -71,13 +74,20 @@ button:focus,
 .button:focus {
   cursor: pointer;
   opacity: 0.8;
-  font-size: 150%;
+}
+.indextitle {
+  margin-top: 20px;
+  padding: 30px;
+}
+.aboutme {
+  padding: 30px;
+  line-height: 200%;
 }
 .profile__portrait {
   border: 1px solid black;
   border-radius: 50%;
   float: left;
-  width: 250;
+  width: 250px;
   margin: 40px;
 }
 .profile {
@@ -93,6 +103,7 @@ button:focus,
   margin-top: auto;
 }
 .page-header {
+  background-color: var(--primary-color);
   display: flex;
   width: 100%;
   padding: 20px;
@@ -110,18 +121,21 @@ button:focus,
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
-  background-color: var(--yellow);
   padding: 5px;
   border-radius: 10px;
 }
 .navigation-list li .navigation-list__item--active {
   text-decoration: none;
 }
+.profile {
+  background-color: var(--section-background);
+  height: 400px;
+}
 /* start grid fallback */
 .grid__item {
   display: inline-block;
   width: 33%;
-  background: var(--grid-background);
+  background: var(--gray);
   margin: 10px;
 }
 /* end grid fallback */
@@ -137,6 +151,7 @@ button:focus,
     width: auto;
     min-height: auto;
     margin: 0;
+    padding: 10px;
   }
   .grid__item:last-child {
     grid-column: 3 / 3;
@@ -165,20 +180,11 @@ button:focus,
   h1 {
     font-size: 22px;
   }
-  a.codelink:hover {font-size: 150%
-  }
   .grid__title {
     text-align: center;
   }
   div.contact-content {
     text-align: center;
-  }
-  .badge-base
-  {
-    display: block;
-    position: absolute;
-    margin-bottom: 30px;
-    margin-left: 25px;
   }
   h1.contact__title {
     text-align: center;
@@ -188,6 +194,10 @@ button:focus,
   }
   #contact-form {
     text-align: center;
+  }
+  .standard-label {
+    width: 200px;
+    display: inline-block;
   }
   input.submit {
     background-color: var(--input);
@@ -200,6 +210,10 @@ button:focus,
     background-color: var(--input);
   }
   table {
+    background-color: var(--section-background);
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -212,34 +226,3 @@ button:focus,
     display: block;
     margin: auto;
   }
-
-/*berlin animation
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-  50% {
-    fill: #fcffad;
-  }
-  100% {
-    fill: #f76414;
-  }
-}
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-*/
