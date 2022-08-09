@@ -130,6 +130,7 @@ button:focus,
 .profile {
   background-color: var(--section-background);
   height: 400px;
+  margin: auto;
 }
 /* start grid fallback */
 .grid__item {
