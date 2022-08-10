@@ -20,7 +20,8 @@ body Roboto
   --link: #1A41EB;
   --link-visted: #551A8B;
   --link-active: #EB1A41;
-  --button-background: #41EB1A; 
+  --button-background: #73788D;
+  --nav-background: #1A41EB;
 }
 html {
   height: 100%
@@ -36,10 +37,9 @@ body {
 }
 a:link {
   text-decoration: none;
-  color: var(link);
+  color: var(--link);
   transition-duration: 0.9s;
   transition-property: opacity;
-  background-color: inherit;
 }
 a:visited {
   text-decoration: none;
@@ -55,11 +55,10 @@ a:active {
   color: var(--link-active)
 }
 .button, button {
-  border: none;
+  border: 1px solid black;
   display: inline-block;
   font-family: inherit;
-  background-color: var(--primary-color);
-  color: black;
+  background-color: lightblue;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -67,7 +66,6 @@ a:active {
   transition-duration: 0.2s;
   transition-property: opacity;
 }
-
 button:hover,
 button:focus,
 .button:hover,
@@ -100,7 +98,7 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: auto;
+  margin-top: 10px;
 }
 .page-header {
   background-color: var(--primary-color);
@@ -131,6 +129,7 @@ button:focus,
   background-color: var(--section-background);
   height: 400px;
   margin: auto;
+  border-radius: 10px;
 }
 /* start grid fallback */
 .grid__item {
@@ -153,6 +152,7 @@ button:focus,
     min-height: auto;
     margin: 0;
     padding: 10px;
+    border-radius: 10px;
   }
   .grid__item:last-child {
     grid-column: 3 / 3;
@@ -200,15 +200,17 @@ button:focus,
     width: 200px;
     display: inline-block;
   }
-  input.submit {
-    background-color: var(--input);
+  .input1 {
+    background-color: var(--section-background);
     cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
   }
   input {
-    background-color: var(--input);
+    background-color: white;
   }
   textarea {
-    background-color: var(--input);
+    background-color: white;
   }
   table {
     background-color: var(--section-background);
@@ -217,6 +219,7 @@ button:focus,
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
   }
   
   div.about-button {
@@ -227,4 +230,17 @@ button:focus,
   #svg2 {
     display: block;
     margin: auto;
+  }
+  fieldset {
+    
+  }
+  
+  legend {
+    background-color: var(--section-background);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  input {
+    margin: 5px;
   }
