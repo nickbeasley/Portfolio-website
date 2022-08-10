@@ -125,6 +125,10 @@ button:focus,
 .navigation-list li .navigation-list__item--active {
   text-decoration: none;
 }
+.navigation-list__item:hover {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
 .profile {
   background-color: var(--section-background);
   height: 400px;
