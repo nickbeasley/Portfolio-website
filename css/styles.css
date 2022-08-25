@@ -11,25 +11,25 @@ body Roboto
 */
 
 :root {
-  --primary-color: #B3D8F2;
-  --secondary-color: #E6F2FB;
+  --primary-color: lightblue;
+  --secondary-color: lightcyan;
   --dark-grey: #2b2b2b;
-  --gray: #ABB2B9; 
-  --input: #E6E6E6;
+  --gray: #abb2b9;
+  --input: #e6e6e6;
   --section-background: lightgray;
-  --link: #1A41EB;
-  --link-visted: #551A8B;
-  --link-active: #EB1A41;
-  --button-background: #73788D;
-  --nav-background: #1A41EB;
+  --link: #1a41eb;
+  --link-visted: #551a8b;
+  --link-active: #eb1a41;
+  --button-background: #73788d;
+  --nav-background: #1a41eb;
 }
 html {
-  height: 100%
+  height: 100%;
 }
 body {
   min-height: 100%;
   background: var(--secondary-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 * {
@@ -43,18 +43,20 @@ a:link {
 }
 a:visited {
   text-decoration: none;
-  color:var(--link-visted);
+  color: var(--link-visted);
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
   cursor: pointer;
   opacity: 0.8;
 }
 a:active {
   text-decoration: underline;
-  color: var(--link-active)
+  color: var(--link-active);
 }
-.button, button {
+.button,
+button {
   border: 1px solid black;
   display: inline-block;
   font-family: inherit;
@@ -168,7 +170,7 @@ button:focus,
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -182,69 +184,68 @@ button:focus,
     grid-row: auto / auto;
   }
 }
-  h1 {
-    font-size: 22px;
-  }
-  .grid__title {
-    text-align: center;
-  }
-  div.contact-content {
-    text-align: center;
-  }
-  h1.contact__title {
-    text-align: center;
-  }
-  div.contactinfo {
-    text-align: center;
-  }
-  #contact-form {
-    text-align: center;
-  }
-  .standard-label {
-    width: 200px;
-    display: inline-block;
-  }
-  .input1 {
-    background-color: var(--section-background);
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  input {
-    background-color: white;
-  }
-  textarea {
-    background-color: white;
-  }
-  table {
-    background-color: var(--section-background);
-    padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-  }
-  
-  div.about-button {
-    margin: auto;
-    width: 50%;
-    text-align: center;
-  }
-  #svg2 {
-    display: block;
-    margin: auto;
-  }
-  fieldset {
-    
-  }
-  
-  legend {
-    background-color: var(--section-background);
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  input {
-    margin: 5px;
-  }
+h1 {
+  font-size: 22px;
+}
+.grid__title {
+  text-align: center;
+}
+div.contact-content {
+  text-align: center;
+}
+h1.contact__title {
+  text-align: center;
+}
+div.contactinfo {
+  text-align: center;
+}
+#contact-form {
+  text-align: center;
+}
+.standard-label {
+  width: 200px;
+  display: inline-block;
+}
+.input1 {
+  background-color: var(--section-background);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+input {
+  background-color: white;
+}
+textarea {
+  background-color: white;
+}
+table {
+  background-color: var(--section-background);
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+div.about-button {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+#svg2 {
+  display: block;
+  margin: auto;
+}
+fieldset {
+}
+
+legend {
+  background-color: var(--section-background);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+input {
+  margin: 5px;
+}
