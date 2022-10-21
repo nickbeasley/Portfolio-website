@@ -78,12 +78,12 @@ button:focus,
 }
 .indextitle {
   margin-top: 20px;
-  padding: 30px;
+  text-align: center;
 }
 .profile__portrait {
   border: 1px solid black;
   border-radius: 25%;
-  float: left;
+  float: right;
   width: 250px;
   margin: 40px;
 }
@@ -98,7 +98,8 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 80px;
+  padding: 25px;
 }
 .page-header {
   background-color: var(--primary-color);
@@ -291,4 +292,11 @@ legend {
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
+}
+.aboutme {
+  padding: 25px;
+  text-align: center;
+}
+.in-progress {
+  padding: 25px;
 }
