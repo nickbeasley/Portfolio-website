@@ -79,10 +79,6 @@ button:focus,
   margin-top: 20px;
   padding: 30px;
 }
-.aboutme {
-  padding: 30px;
-  line-height: 200%;
-}
 .profile__portrait {
   border: 1px solid black;
   border-radius: 50%;
@@ -132,7 +128,6 @@ button:focus,
   border-radius: 5px;
 }
 .profile {
-  background-color: var(--section-background);
   height: 400px;
   margin: auto;
   border-radius: 10px;
@@ -229,6 +224,10 @@ table {
 }
 th {
   font-size: 20px;
+  text-align: left;
+}
+td {
+  padding: 8px;
 }
 
 div.about-button {
