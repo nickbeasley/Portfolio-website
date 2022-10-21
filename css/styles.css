@@ -81,7 +81,7 @@ button:focus,
 }
 .profile__portrait {
   border: 1px solid black;
-  border-radius: 50%;
+  border-radius: 25%;
   float: left;
   width: 250px;
   margin: 40px;
@@ -91,6 +91,7 @@ button:focus,
   margin: 0 auto;
   text-align: left;
 }
+
 .page-footer {
   clear: both;
   display: flex;
@@ -103,16 +104,17 @@ button:focus,
   display: flex;
   width: 100%;
   padding: 20px;
+  justify-content: space-between;
 }
 .page-header__item {
   flex: 0 1 200px;
 }
-.page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
-}
 .navigation-list {
   list-style-type: none;
+}
+.navigation-list:last-child {
+  display: flex;
+  justify-content: flex-end;
 }
 .navigation-list li {
   display: inline-block;
