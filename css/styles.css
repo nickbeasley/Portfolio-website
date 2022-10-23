@@ -58,16 +58,7 @@ a:active {
 
 .button,
 button {
-  border: 1px solid black;
-  display: inline-block;
-  font-family: inherit;
-  background-color: lightblue;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition-duration: 0.2s;
-  transition-property: opacity;
+  color: white;
 }
 button:hover,
 button:focus,
@@ -78,6 +69,7 @@ button:focus,
 }
 .indextitle {
   margin-top: 20px;
+  padding: 10px;
   text-align: center;
 }
 .profile__portrait {
@@ -88,6 +80,7 @@ button:focus,
   margin: 40px;
 }
 .profile {
+  box-shadow: 0 0 20px 8px #d0d0d0;
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
@@ -102,6 +95,7 @@ button:focus,
   padding: 25px;
 }
 .page-header {
+  box-shadow: 0 0 20px 8px #d0d0d0;
   background-color: var(--primary-color);
   display: flex;
   width: 100%;
@@ -132,12 +126,14 @@ button:focus,
   border-radius: 5px;
 }
 .profile {
-  height: 400px;
+  height: fit-content;
+  width: fit-content;
   margin: auto;
   border-radius: 10px;
 }
 /* start grid fallback */
 .grid__item {
+  box-shadow: 0 0 15px 1px #d0d0d0;
   display: inline-block;
   width: 33%;
   background: var(--gray);
@@ -208,7 +204,8 @@ div.contactinfo {
   width: 200px;
   display: inline-block;
 }
-.input1 {
+.input1,
+#button-primary {
   background-image: linear-gradient(#42a1ec, #0070c9);
   border: 1px solid #0077cc;
   border-radius: 4px;
@@ -231,6 +228,12 @@ div.contactinfo {
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
+  margin-top: 20px;
+}
+
+.button-resume:active,
+.button-resume:visited {
+  color: white;
 }
 
 .input1:disabled {
@@ -262,13 +265,18 @@ textarea {
   font-style: italic;
 }
 table {
-  background-color: var(--section-background);
-  padding: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 400px;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  padding: 15px;
 }
 th {
   font-size: 20px;
