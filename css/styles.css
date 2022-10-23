@@ -98,9 +98,10 @@ button:focus,
   box-shadow: 0 0 20px 8px #d0d0d0;
   background-color: var(--primary-color);
   display: flex;
-  width: 100%;
+  width: fit-content;
   padding: 20px;
   justify-content: space-between;
+  min-width: 100%;
 }
 .page-header__item {
   flex: 0 1 200px;
@@ -129,6 +130,7 @@ button:focus,
   height: fit-content;
   width: fit-content;
   margin: auto;
+
   border-radius: 10px;
 }
 /* start grid fallback */
