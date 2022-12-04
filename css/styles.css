@@ -80,7 +80,6 @@ button:focus,
   margin: 40px;
 }
 .profile {
-  box-shadow: 0 0 20px 8px #d0d0d0;
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
