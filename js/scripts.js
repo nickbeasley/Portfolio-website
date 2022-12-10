@@ -1,11 +1,19 @@
-(function () {
-  let emailInput = document.querySelector("#contact-email");
+function handleFormSubmit(event) {
+  // prevent the default form submission behavior
+  event.preventDefault();
 
-  function validateEmail() {
-    let value = emailInput.value;
-    let hasAtSign = value.indexOf("@") > -1;
-    let hasDot = value.indexOf(".") > -1;
-    return value && hasAtSign && hasDot;
-    return false;
-  }
-})();
+  // get the values of the form fields
+  let form = event.target;
+  let name = form.elements.name.value;
+  let email = form.elements.email.value;
+
+  // do something with the form values, such as send them to a server
+  // for processing or validation
+  // ...
+
+  // reset the form fields
+  form.reset();
+}
+
+let form = document.getElementById("contact-form");
+form.addEventListener("submit", handleFormSubmit);
