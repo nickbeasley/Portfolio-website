@@ -76,18 +76,18 @@
 
     <!--Here is the Form Section-->
 
-    <form id="contact-form" method="POST" data-netlify="true">
+    <form id="contact-form" name="contact" method="POST" data-netlify="true">
       <fieldset>
         <legend>Contact Form</legend>
         <label class="contact-form__label" hidden>Contact Form</label>
         <br />
-        <input required placeholder="First Name" />
+        <input required placeholder="First Name" name="first-name"/>
         <br />
-        <input required placeholder="Last Name" />
+        <input required placeholder="Last Name" name="last-name"/>
         <br />
-        <input type="email" id="contact-email" placeholder="Email" required />
+        <input type="email" id="contact-email" placeholder="Email" required name="email"/>
         <br />
-        <input type="tel" id="contact-tel" placeholder="Telephone" />
+        <input type="tel" id="contact-tel" placeholder="Telephone" name="phone" />
         <br />
         <label class="text-area-label" for="textarea">Leave a message..</label
         ><br />
@@ -96,6 +96,7 @@
           id="contact-message"
           placeholder="Type here"
           required
+          name="message"
         >
         </textarea>
         <br />
