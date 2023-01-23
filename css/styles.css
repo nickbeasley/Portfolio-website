@@ -325,8 +325,9 @@ legend {
   padding: 25px;
   padding: 15px;
   margin: 20px;
-  box-shadow: 0 0 15px 1px #d0d0d0;
-  background: var(--section-background);
+}
+.skills-header {
+  text-align: center;
 }
 .project-ss {
   height: 200px;
@@ -334,4 +335,16 @@ legend {
 }
 .project-header {
   text-align: center;
+}
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  background: var(--section-background);
+  margin: 25px;
+  box-shadow: 0 0 15px 1px #d0d0d0;
+  padding: 20px;
+}
+.skill-list {
+  font-size: large;
+  font-weight: bold;
 }
