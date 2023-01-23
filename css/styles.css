@@ -281,7 +281,7 @@ textarea {
   font-size: small;
   font-style: italic;
 }
-table {
+/* table {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -301,7 +301,7 @@ th {
 }
 td {
   padding: 8px;
-}
+} */
 
 div.about-button {
   margin: auto;
