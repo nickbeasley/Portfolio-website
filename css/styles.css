@@ -75,16 +75,38 @@ button:focus,
 .profile__portrait {
   border: 1px solid black;
   border-radius: 25%;
-  float: right;
   width: 250px;
   margin: 40px;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container img {
+  flex: 1;
+  max-width: 100%;
+}
+
+.container .aboutme {
+  flex: 1;
+}
+
 .profile {
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
   box-shadow: 0 0 15px 1px #d0d0d0;
   background: var(--section-background);
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+  border-radius: 10px;
+}
+.aboutme {
+  padding: 25px;
+  text-align: center;
 }
 
 .page-footer {
@@ -125,13 +147,6 @@ button:focus,
 .navigation-list__item:hover {
   background-color: var(--secondary-color);
   border-radius: 5px;
-}
-.profile {
-  height: fit-content;
-  width: fit-content;
-  margin: auto;
-
-  border-radius: 10px;
 }
 /* start grid fallback */
 .grid__item {
@@ -302,10 +317,6 @@ legend {
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
-}
-.aboutme {
-  padding: 25px;
-  text-align: center;
 }
 .in-progress {
   padding: 25px;
